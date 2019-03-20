@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+</head>
+
+<body>
+    <section id="section-login">
+        <div>
+            <h1 id="landing-page-heading">Login</h1>
+            <div class="landing-inputs-wrapper">
+                <input type="text" id="name" placeholder="Enter your firstname">
+                <input type="password" id="pass" placeholder="Enter your password">
+                <button id="login-btn" onclick="validate()">Login</button>
+            </div>
+        </div>
+    </section>
+    <section id="section-list" style="display:none">
+        <div>
+            <div>
+                <h1>Employee List</h1>
+                <!-- <button id="upload-btn">Upload Employee Details</button>
+                <button id="download-btn">Download Employee Details</button> -->
+            </div>
+            <div>
+                <table id="emp-table">
+                	<thead>
+                    <tr>
+                        <th>Employee code</th>
+                        <th>Employee name</th>
+                        <th>Location</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section id="edit-details" style="display:none">
+        <div>
+            <h1 id="edit-head">Edit Employee details</h1>
+            <div>
+                <table>
+                    <tr>
+                        <td>Employee code</td>
+                       <td> <input type="text" id="empCode"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Employee name</td>
+                        <td><input type="text" id="empName"></input></td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td> <textarea name="loc" rows="5" cols="10" id="empLoc"></textarea></td>
+
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td><input type="text" id="empMail"></input></td>
+                    </tr>
+
+                    <tr>
+                        <td>D.O.B</td>
+                        <td><input type="text" id="empDob"></input></td>
+                    </tr>
+                    <tr>
+                       <td><button onclick="editUser()">Submit</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
